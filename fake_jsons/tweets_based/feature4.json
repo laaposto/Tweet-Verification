@@ -1,0 +1,37 @@
+{
+  "percentage_of_null_in_fake": 0.0,
+  "percentage_of_null_in_real": 0.0,
+  "x_values_real": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "explanation": "The number of URLs in the tweet text.",
+  "rank": 0,
+  "feature_name": "Number of URLs",
+  "percentage_values_real": [
+    4.337349397590388,
+    89.17269076304026,
+    6.377510040157901,
+    0.08032128514052772,
+    0.03212851405621109
+  ],
+  "percentage_values_fake": [
+    1.8077413866439769,
+    93.27945555084955,
+    4.795831561041027,
+    0.11697150148880553,
+    0.0
+  ],
+  "x_values_fake": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

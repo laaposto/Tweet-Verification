@@ -1,0 +1,21 @@
+{
+  "x_values_real": [
+    "true",
+    "false"
+  ],
+  "explanation": "Shows if the tweet text contains first order pronoun (true,false).",
+  "rank": 0,
+  "feature_name": "Contains first order pronoun",
+  "percentage_values_real": [
+    5.076305220883534,
+    81.84738955823293
+  ],
+  "percentage_values_fake": [
+    6.242024670353041,
+    78.92386218630371
+  ],
+  "x_values_fake": [
+    "true",
+    "false"
+  ]
+}

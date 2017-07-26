@@ -1,0 +1,21 @@
+{
+  "x_values_real": [
+    "true",
+    "false"
+  ],
+  "explanation": "The user profile has a header image other than the default (true,false).",
+  "rank": 0,
+  "feature_name": "Has header image",
+  "percentage_values_real": [
+    94.90763052208835,
+    5.092369477911647
+  ],
+  "percentage_values_fake": [
+    96.12930667800936,
+    3.8706933219906423
+  ],
+  "x_values_fake": [
+    "true",
+    "false"
+  ]
+}

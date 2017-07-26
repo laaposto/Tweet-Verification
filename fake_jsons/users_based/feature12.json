@@ -1,0 +1,21 @@
+{
+  "x_values_real": [
+    "true",
+    "false"
+  ],
+  "explanation": "The user profile provides information about its location (true,false).",
+  "rank": 0,
+  "feature_name": "Has location",
+  "percentage_values_real": [
+    78.8433734939759,
+    21.156626506024097
+  ],
+  "percentage_values_fake": [
+    71.93747341556784,
+    28.062526584432156
+  ],
+  "x_values_fake": [
+    "true",
+    "false"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "percentage_of_null_in_fake": 88.39855380689069,
+  "percentage_of_null_in_real": 81.09236947791165,
+  "x_values_real": [
+    0,
+    1000,
+    10000,
+    100000,
+    500000,
+    800000
+  ],
+  "explanation": "Indegree ranking is the number of sites with a link towards a concrete site.",
+  "rank": 0,
+  "feature_name": "Indegree Ranking",
+  "percentage_values_real": [
+    13.076305220883668,
+    1.6867469879518282,
+    2.9558232931727275,
+    1.0923694779116602,
+    0.0963855421686759
+  ],
+  "percentage_values_fake": [
+    7.741386643981238,
+    1.3292216078264474,
+    1.81837515950658,
+    0.6911952360697526,
+    0.021267545725223158
+  ],
+  "x_values_fake": [
+    0,
+    1000,
+    10000,
+    100000,
+    500000,
+    800000
+  ]
+}
