@@ -36,10 +36,10 @@
             </li>
         </ul>
     </div>
-    <button type="button" onclick="analyze_tweet();return false;" class="btn-primary">
+    <button type="button" id="verify_but" class="btn-primary">
         Verify
     </button>
-    <p class="show_examples">Back to examples</p>
+    <p class="show_examples"><a href="index.html" style="color: #AF0E09">Back to examples</a></p>
 
     <p class="desc_examples">Or inspect one of selected examples</p>
 </div>
@@ -62,8 +62,8 @@
     </div>
     <ul id="features_list">
         <div class='verticalLine'></div>
-        <li class='feature active_feature'>
-            <input class='radio' id='work1' name="features" type='radio' checked>
+        <li class='feature'>
+            <input class='radio' id='work1' name="features" type='radio'>
 
             <div class='relative'>
                 <label for='work1'>Contains question mark</label>

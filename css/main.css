@@ -15,7 +15,7 @@ body {
     padding: 0;
     vertical-align: baseline;
     cursor: default;
-    margin: -20px 0 0;
+    margin: -32px 0 0;
 }
 
 #bar_chart {
@@ -54,13 +54,14 @@ body {
     display: none;
     overflow-y: auto;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .verticalLine {
     border-left: 8px solid darkgray;
     position: absolute;
     left: 7px;
-    top: -20px;
+    top: 20px;
 }
 
 #features_list li {
@@ -257,9 +258,9 @@ label {
 
 #wrapper_result {
     display: none;
-    padding: 10px;
     width: 1345px;
     margin: 0 auto;
+    padding: 10px 10px 0;
 }
 
 .input_box {
