@@ -1,5 +1,12 @@
 $(function () {
-    load_examples();
+    var tweet_old_ui = gup('tweet_id');
+    if (tweet_old_ui != "") {
+        $('#tweet_url').val(tweet_old_ui);
+        $('#verify_but').click();
+    }
+    else {
+        load_examples();
+    }
 });
 
 function load_examples() {
@@ -155,7 +162,7 @@ function load_examples() {
 
 $('#tweet_url').keyup(function (e) {
     if (e.keyCode == 13) {
-       $('#verify_but').click();
+        $('#verify_but').click();
     }
 });
 $('#verify_but').click(function () {
@@ -177,3 +184,11 @@ $('.analyze').click(function () {
     $('#tweet_url').val($(this).parents('.tweets').attr('data-tweetID'));
     $('#verify_but').click();
 });
+function gup(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.href);
+    if (results == null) return "";
+    else return results[1];
+}
