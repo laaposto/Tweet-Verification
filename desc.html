@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tweet Verification</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Supporting the verification of an arbitrary tweet">
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Laaposto">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Roboto+Slab:400,300,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="imgs/favicon.ico"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--END CSS -->
+
+</head>
+<body>
+<div id="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</div>
+<div id="user_input">
+    <h1>Tweet Verification Assistant</h1>
+
+    <h3>Get help in analyzing the veracity of a tweet</h3>
+</div>
+<div class="desc_container">
+    <div>
+        <h1 class="desc_title">Description of features </h1>
+    </div>
+    <div class="clear"></div>
+    <div class="desc_content">
+        <p><strong>Text length</strong></p>
+
+        <p>The length in characters of the tweet text. The tweet text is first preprocessed by removing HTTP
+            links, hashtags, user mentions and retweets.</p>
+
+        <p><strong>Number of words</strong></p>
+
+        <p>The number of words in the tweet text. The tweet text is first preprocessed by removing
+            http links, hashtags, user mentions and retweets. Additionally, several useless symbols are removed such as
+            !,=,&lt; etc.</p>
+
+        <p><strong>Number of positive/negative sentiment words</strong></p>
+
+        <p>We support three different languages English, Spanish and
+            German, for each of which we make use of a different list of sentiment words. For English we use <a
+                    href="https://github.com/jeffreybreen/twitter-sentiment-analysis-tutorial-201107" target="_blank">the
+                list provided by Jeffrey Breen</a>, for Spanish <a
+                    href="https://link.springer.com/article/10.3758/BF03193031" target="_blank">the Spanish adaptation
+                for ANEW</a> and for German <a href="https://link.springer.com/article/10.3758/BRM.42.4.987"
+                                               target="_blank">the Leipzig Affective Norms for German</a>. For
+            other languages, no such feature is computed.</p>
+
+        <p><strong>Number of slang words</strong></p>
+
+        <p>For slang detection we use predefined lists of slang words in <a
+                href="http://onlineslangdictionary.com/word-list/0-a/" target="_blank">English</a> and <a
+                href="http://www.languagerealm.com/spanish/spanishslang.php" target="_blank">Spanish</a>. For
+            other languages no such feature is computed. </p>
+
+
+        <p><strong>Readability</strong></p>
+
+        <p>An open-source implementation of the Flesch Reading Ease method is used to compute a readability score in the
+            range 0-100 [0: hard-to-read, 100: easy-to- read].</p>
+
+        <p><strong>Web metrics</strong></p>
+
+        <p>
+            Depending on the existence of external URLs, the tweet reliability is quantified based on a set of Web
+            metrics.
+            For tweet based features, external URLs found in the tweet text are examined while for used-based features,
+            the URLs found in the Twitter profile description.
+        </p>
+        <ul>
+            <li>WOT trust: The <a href="https://www.mywot.com/" target="_blank">Web of Trust (WOT) score</a> which is a
+                way to assess
+                the trust on a website using crowdsourced reputation ratings.
+            </li>
+            <li>Indegree Ranking/ Harmonic Centrality: The in-degree and harmonic centralities of the Web graph are
+                looked up based on the rankings computed by the <a
+                        href="http://www.ranking.webdatacommons.org/more.html" target="_blank">Web Data Commons</a>
+                project.
+            </li>
+            <li>Four Alexa metrics (rank, popularity, delta rank and reach rank) based on the <a
+                    href="http://data.alexa.com/data?cli=10&amp;url=google.com" target="_blank">rankings API</a>.
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- JS -->
+
+</body>
+
+</html>
